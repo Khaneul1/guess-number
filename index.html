@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>짱구는 못 말려</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: 'DungGeunMo';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 17.5px;
+      }
+    </style>
+  </head>
+
+  <body
+    style="
+      background-image: url('https://i.pinimg.com/originals/69/55/ab/6955ab76a39efb0e41544bd9986a7365.jpg');
+      background-size: cover;
+    "
+  >
+    <div class="guess-box">
+      <div class="container">
+        <!--vspace : 그림과 글 사이 상하 간격 조정-->
+        <div class="imgStyle">
+          <img
+            src="https://i.namu.wiki/i/k-KMcaukd4ZSk1CMn6Jsn1xseaeo06pIABfHx-RuSoM8G_BcDjJ-LrYb5FZWvqTc_wEvgLtPCe48enkmi87S_A.svg"
+            width="250"
+            height="90"
+            vspace="20"
+            alt="짱구"
+            class="imgStyle"
+          />
+        </div>
+        <!--결과창-->
+        <div id="result-area">
+          부리부리왕국에 갇힌 짱구를 구해주세요!<br />
+          짱구는 몇 번째 감옥에 있을까요?
+        </div>
+        <div id="chance-area">남은 기회: 5번</div>
+
+        <!--타입 지정 : number-->
+        <div class="input-box">
+          <input
+            type="number"
+            id="user-input"
+            class="inputStyle"
+            placeholder="번호를 입력하세요"
+          />
+        </div>
+        <!--버튼 만들기-->
+        <div class="buttonStyle">
+          <button id="play-button" class="btn">Go!</button>
+          <button id="reset-button" class="btn">리셋!</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
