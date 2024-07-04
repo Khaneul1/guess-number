@@ -16,7 +16,7 @@ userInput.addEventListener('focus', function () {
 }); //익명의 함수. 잠깐 쓰다 끝날 함수라서 안에다 정의
 
 function pickRandomNum() {
-  computerNum = Math.floor(Math.random() * 100) + 1;
+  computerNum = Math.floor(Math.random() * 50) + 1;
   console.log('정답', computerNum);
 }
 
@@ -24,8 +24,8 @@ function play() {
   let userValue = userInput.value;
 
   //chances--; 하기 전 값의 유효성 검사를 해야 함
-  if (userValue < 1 || userValue > 100) {
-    resultArea.textContent = '1과 100 사이 숫자를 입력해 주세요';
+  if (userValue < 1 || userValue > 50) {
+    resultArea.textContent = '1과 50 사이 숫자를 입력해 주세요';
     //여기서 종료해야 됨!!! 안 그럼 chances가 깎이고 비교를 하기 시작
     return; //어떠한 값도 return 하지 않는다
   }
