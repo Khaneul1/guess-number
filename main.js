@@ -42,7 +42,7 @@ function play() {
   console.log('chance', chances);
 
   if (userValue < computerNum) {
-    resultArea.textContent = '[조금만 더 높여 봐!!!]';
+    resultArea.textContent = '[더 높여 봐!!!]';
   } else if (userValue > computerNum) {
     resultArea.textContent = `[${userValue}보단 작아!!!]`;
   } else {
@@ -57,7 +57,8 @@ function play() {
   //chances가 1보다 작을 때 게임 종료
   if (chances < 1) {
     chanceArea.textContent = '[흰둥이를 잘 부탁해...]';
-    resultArea.textContent = '짱구가 탈출에 실패했어요!!';
+    resultArea.innerHTML = `짱구가 탈출에 실패했어요!! <br>
+    짱구가 갇힌 감옥 번호는 ${computerNum}이에요`;
     gameOver = true;
   }
 

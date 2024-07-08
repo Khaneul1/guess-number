@@ -30,7 +30,7 @@
 }
 
 .container {
-  display: flex;
+  display: flex; /*기본값이 가로임. 나열하는 것*/
   flex-direction: column;
   justify-content: center;
   margin-top: -30px;
